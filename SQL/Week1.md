@@ -84,6 +84,8 @@
 ---
 # 2️⃣ 학습 인증란
 ---
+<img width="825" height="730" alt="image" src="https://github.com/user-attachments/assets/2db8ae9a-4daa-4420-b7a7-abca214f8c4e" />
+
 
 # 3️⃣ 확인문제
 
