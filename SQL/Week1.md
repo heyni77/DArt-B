@@ -84,7 +84,7 @@
 ---
 # 2️⃣ 학습 인증란
 ---
-![alt text](image.png)
+![alt text](image-1.png)
 
 # 3️⃣ 확인문제
 
