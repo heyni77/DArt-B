@@ -117,8 +117,8 @@
 
 ~~~
 수행 인증샷
-![alt text](image-10.png)
 ~~~
+![alt text](image-10.png)
 <br>
 
 <br>
