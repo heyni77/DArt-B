@@ -117,11 +117,14 @@
 1) 
 ![alt text](image-14.png)
 
-3)
+3) 
 ![alt text](image-15.png)
 
 4) 
+- 하나만 알고 싶을 경우 LIMIT 1
+- LEFT JOIN을 두 번 이상 연속해서 사용할 수 있음
 
+---
 
 
 <br>
@@ -145,14 +148,9 @@ https://school.programmers.co.kr/learn/courses/30/lessons/144854
 1) 
 ![alt text](image-12.png)
 
-3) 
+2) 
 ![alt text](image-13.png)
 
-4) 
-- 하나만 알고 싶을 경우 LIMIT 1
-- LEFT JOIN을 두 번 이상 연속해서 사용할 수 있음 
-
----
 
 # 3️⃣ 참고자료
 
