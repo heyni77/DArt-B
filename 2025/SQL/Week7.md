@@ -153,10 +153,13 @@ https://leetcode.com/problems/list-the-products-ordered-in-a-period/
 2. 오랜 기간 보호한 동물(1)
 ![alt text](image-18.png)
 
-3. Combine Two Tables
+3. 
+![alt text](image-22.png)
+
+4. Combine Two Tables
 ![alt text](image-19.png)
 
-4. List the Products Ordered in a Period
+5. List the Products Ordered in a Period
 ![alt text](image-20.png)
 
 
