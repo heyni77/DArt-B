@@ -48,10 +48,28 @@ https://www.youtube.com/watch?v=WWAFAm9op2U&list=PLVsNizTWUw7GCfy5RH27cQL5MeKYnl
 <!-- 기본적인 SQL 문법에 관해 배우게 된 점을 적어주세요. -->
 - SELECT: 구축이 완료된 테이블에서 데이터를 추출하는 기능
     - 가장 기본 형식은 SELECT ~ FROM ~ WHERE
+- VARCHAR와 CHAR = 문자를 입력하는 것
+- AUTO_INCREMENT: 자동으로 숫자를 입력해준다는 뜻 (순번은 직접 입력할 필요없이 자동으로 증가)
+- 기본 조회하기
+    -  USE문(USE 데이터베이스_이름;): 현재 사용하는 데이터베이스를 지정 또는 변경하는 형식
+    - SELECT ~ FROM(데이터베이스_이름.테이블 이름): 대괄호[]로 묶인 부분은 생략이 가능 
+    - 열 이름에 별칭(alias)를 지정할 수 있음 - 열 이름 다름에 지정하고 싶은 별칭을 입력하면 됨 - 공백이 있으면 큰따옴표로 묶기
+- 특정한 조건만 조회하기
+    - 기본적인 WHERE절(SELECT 열_이름 FROM 테이블_이름 WHERE 조건식;)
+    - 관계 연산자, 논리 연산자의 활용
+        - 관게 연산자: <,>,>=,=.<= 등
+        - 논리 연산자: or, and 등
+    - BETWEEN ~ AND: 범위에 있는 값을 구하는 경우 사용
+        - 조건식에서 여러 문자 중 하나의 포함되는지를 비교할 때는 IN()
+    - LIKE: 문자열의 일부 글자를 검색할 때 
+        - % / _ 사용
 
 
 <!-- 이번 챕터에서 제시된 실습을 흐름에 맞게 진행한 후, 실습 과정이 보일 수 있도록 인증 사진을 3~4장 제출해 주세요. -->
-![SQL2주차사진1](C:\Users\gksgp\Desktop\대외활동\다트-비\weekly_assignment\DArt-B\2026\images)
+![alt text](image-9.png)
+![alt text](image-10.png)
+![alt text](image-12.png)
+![alt text](image-13.png)
 
 > **확인문제: 다음 SQL문의 빈칸에 들어갈 WHERE절의 문법으로 틀린 것을 고르세요.**
 
@@ -70,13 +88,25 @@ WHERE ________;
 ```
 
 ```
-여기에 답을 적어주세요!
+1번, == 가 아니라 = 를 사용해야 한다. 
 ```
 
 
 ## 2. 좀 더 깊게 알아보는 SELECT문
 
 <!-- ORDER BY절과 GROUP BY절에 관해 배우게 된 점을 적어주세요. -->
+- GROUP BY : 지정한 열의 데이터들을 같은 데이터끼리 묶어서 결과를 추출
+    - 주로 그룹으로 묶는 경우에 합겨, 평균, 개수 등을 처리할 때 사용 하므로 집계 함수와 함께 사용
+        - 집계함수: SUM(), AVG(), MIN(), MAX(), COUNT() COUNT(DISTINCT)
+    - HAVING: WHERE과 비슷하지만 GROUP BY 절과 함께 사용
+        - 집계 함수는 WHERE절에 나타날 수 없음 -> HAVING 절 사용 
+- ORDER BY: 결과의 값이나 개수에 대해서는 영향을 미치지 않지만, 결과가 출력되는 순서를 조절 
+    - ACS: 오름차순
+    - DESC: 내림차순
+    - WHERE 절과 함께 사용할 수 잇음, ORDERBY절이 WHERE절 다음에 나와야 함 
+    - LIMIT(LIMIT 시작, 개수): 출력하는 개수를 제한 
+- DISTINCT: 중복된 결과를 제거
+    - 열 이름 앞에 DISTINCT를 써주기만 하면 중복된 데이터 1개만 남기고 제거 
 
 > **확인문제: 다음 표는 주요 집계함수를 정리한 것입니다. 각 설명에 해당하는 올바른 함수명을 기호에 맞게 작성하세요.**
 
@@ -91,16 +121,26 @@ WHERE ________;
 
 ```
 여기에 답을 적어주세요!
-(ㄱ) 
-(ㄴ) 
-(ㄷ) 
-(ㄹ) 
+(ㄱ) AVG()
+(ㄴ) MIN()
+(ㄷ) COUNT()
+(ㄹ) COUNT(DISTINCT)
 ```
 
 
 ## 3. 데이터 변경을 위한 SQL문
 
 <!-- INSERT문, UPDATE문, DELETE문에 관해 배우게 된 점을 적어주세요. -->
+- INSERT: 테이블에 행 데이터를 입력
+    - INSERT INTO 테이블 [] VALUES ()
+    - AUTO_INCREMENT 로 지정하는 열은 꼭 PK로 지정
+        - AUTO_INCREMENT_INCREMENT = 증가값을 지정 
+    - ALTER TABLE: 테이블을 변경 
+- UPDATE: 데이터 수정
+    - UPDATE 테이블_이름 SET 값 WHERE 조건;
+    - WHERE 값이 없으면 모든 행의 값이 변경됨 
+- DELETE: 데이터 삭제
+    - DELETE FROM 테이블이름 WHERE 조건;
 
 > **확인문제: 다음이 설명하는 SQL이 무엇인지 쓰세요.**
 
@@ -111,7 +151,7 @@ WHERE ________;
 ```
 
 ```
-여기에 답을 적어주세요!
+TRUNCATE
 ```
 
 
@@ -163,6 +203,11 @@ INSERT INTO students VALUES
 5. students 테이블에 본인의 정보를 직접 INSERT 하시오. (INSERT 실행 후, 데이터가 정상적으로 추가되었는지 확인할 수 있도록 조회 결과까지 포함하여 캡처하시오.)
 
 <!-- 이 부분을 지우고 인증사진을 제출해주세요.-->
+![alt text](image-14.png)
+![alt text](image-15.png)
+![alt text](image-16.png)
+![alt text](image-17.png)
+![alt text](image-18.png)
 
 ### 🎉 수고하셨습니다.
 
