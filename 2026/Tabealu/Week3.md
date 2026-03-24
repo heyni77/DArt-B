@@ -226,7 +226,8 @@
 2) 해당 필터를 우클릭하여 컨텍스트에 추가한다.
 3) 도시 필드에 대해 필터를 적용한다. 
 ```
-![alt text](week3_image1)
+![alt text](image-13.png)
+
 
 <!-- DArt-B superstore가 아닌 개인 superstore 파일을 사용했다면 값이 다르게 표시될 수 있습니다.-->
 
@@ -254,7 +255,7 @@
 
 ## [답안]
 ```
-![alt text](week3_image2)
+![alt text](image-12.png)
 ```
 
 <br>
