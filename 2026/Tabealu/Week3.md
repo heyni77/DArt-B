@@ -254,9 +254,7 @@
 
 
 ## [답안]
-```
-![alt text](image-14.png)
-```
+![alt text](image-15.png)
 
 <br>
 
