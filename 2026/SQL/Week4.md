@@ -73,6 +73,7 @@ https://www.youtube.com/watch?v=JrXWxku7ZIM&list=PLVsNizTWUw7GCfy5RH27cQL5MeKYnl
     - 이러한 결함을 미리 방지하기 위해 **기본키**를 지정할 수 있음 
     - *기본키*의 조건은 중복되지 않고, 비어 있지도 않음
 대표적인 제약 조건
+
 | 제약 조건 | 설명 | 특징 |
 |-----------|------|------|
 | PRIMARY KEY | 각 행을 고유하게 식별 | 중복 불가, NULL 불가 |
