@@ -207,10 +207,7 @@ LOD 결과를 단일 값으로 만들어서 다른 집계값과 연산 가능하
 4) 각 상품이 배송까지 걸린 날 수를 표현하고
 5) 그리고 만약 배송이 각 나라/범주별 평균보다 빨랐다면 '빠름', 같다면 '평균', 느리다면 '느림' 으로 print 해주세요. 
 ```
-
-![alt text](https://raw.githubusercontent.com/DArt-B-Official/07_Tableau_Template/main/images/Week4-1.png)
-
-
+![alt text](image-17.png)
 
 <!-- 여기까지 오는 과정 중 알게 된 점을 기입하고, 결과는 시트 명을 본인 이름으로 바꾸어 표시해주세요.-->
 
@@ -226,9 +223,7 @@ LOD 결과를 단일 값으로 만들어서 다른 집계값과 연산 가능하
  어떤 값이 각 지표의 평균보다 낮은 값을 갖고 있다면 색깔을 주황색으로, 그것보다 높다면 파란색으로 표시하고 싶어요. 그 평균값은 각 지표별로 달라야 해요.
 ```
 
-![alt text](https://raw.githubusercontent.com/DArt-B-Official/07_Tableau_Template/main/images/Week4-2.png)
-
-
+![alt text](image-18.png)
 
 <!-- 예시 사진은 지워주세요-->
 
